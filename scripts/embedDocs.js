@@ -27,7 +27,7 @@ ${chunk.content}
 
     await upsertVector(chunk.id, embedding, {
       module: chunk.module,
-      subsection: chunk?.subsection,
+      subsection: chunk?.subsection || "",
       title_path: chunk.title_path,
       content: chunk.content,
     });
